@@ -12,12 +12,10 @@ function newVideo() {
 function pushToDOM(input){
     var response = JSON.parse(input);
     var image = response.data;
-    console.log(response.data);
     var src = image.images.original.url;
     var container = document.querySelector(".container");
     container.innerHTML = "<img src=\"" + src + "\">";
     var imageWidth = image.image_width;
-    console.log(imageWidth);
     document.querySelector("body").style.maxWidth = imageWidth + "px";
     setTimeout(newVideo, 10000);
 };
