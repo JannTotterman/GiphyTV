@@ -1,4 +1,4 @@
-var url = "http://api.giphy.com/v1/gifs/random?api_key=S5T7dHoInq9St05lBLf54BVw4pNVLPw7";
+var url = "https://api.giphy.com/v1/gifs/random?api_key=S5T7dHoInq9St05lBLf54BVw4pNVLPw7";
 newVideo();
 function newVideo() {
     var giphyAJAXCall = new XMLHttpRequest();
